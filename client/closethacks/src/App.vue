@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <router-view/>
+    <SideBar></SideBar>
+    <router-view class="main-section" />
   </div>
 </template>
 
 <script>
+import SideBar from '@/components/SideBar'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SideBar
+  },
 }
 </script>
 
@@ -17,5 +23,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+}
+
+.main-section {
+  display: flex;
+  width: 80vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 785px) {
+  .main-section {
+    width: 100vw;
+  }
 }
 </style>

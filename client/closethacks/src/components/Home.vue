@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <section class="sidebar-sec">
-    </section>
-    <section class="main-sec">
       <section class="filter-sec">
       <div id="season-check" class="filter-list">
         <p class="check-title">Season</p>
@@ -82,7 +79,7 @@
               <img class="shoe" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Mens%27_ballroom_shoes%2C_Eurodance_CZ.jpg" />
             </slide>
             <slide>
-              <img class="shoe" src="https://c1.staticflickr.com/6/5187/5612137877_488e4831b6_z.jpg" />
+              <img class="shoe" src="https://c1.staticflickr.com/6/5187/5612137877_488e4831b6_z.jpggit" />
             </slide>
             <slide>
               <img class="shoe" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Combat_boots_IMGP8975.jpg" />
@@ -90,7 +87,6 @@
           </carousel>
         </div>
       </section>
-    </section>
   </div>
 </template>
 
@@ -101,50 +97,40 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App"
     };
-  }
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.home {
-  display: flex;
-}
-
-.sidebar-sec {
-  display: inline-block;
-  width: 20vw;
-  height: 100vh;
-  border-right: 1px black solid;
-}
-
-.main-sec {
-  display: flex;
-  width: 80vw;
-  height: 100vh;
-}
-
 .filter-sec {
-  width: 30vw;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .filter-list {
-  justify-content: flex-start;
+  width: 100px;
 }
 
 #season-check {
   padding-bottom: 10vh;
+  align-items: center;
 }
 
 p.check-title {
+  margin: auto;
+  width: 10vw;
   font-size: 30px;
+  padding-bottom: 5px;
+  border-bottom: 3px #ccc solid;
+  margin-bottom: 15px;
 }
 
 .slider-sec {
-  width: 40vw;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
