@@ -1,0 +1,24 @@
+{
+  "name": "crud",
+  "version": "0.0.0",
+  "description": "",
+  "author": "justinhodev <justinhodev@gmail.com>",
+  "main": "functions/__main__.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "mime": "^1.5.0",
+    "mongodb": "^2.2.33"
+  },
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "justinhodev/crud",
+    "timeout": 10000,
+    "publish": true,
+    "personalize": {
+      "keys": [],
+      "user": []
+    },
+    "source": "@steve/todo-mongo/0.0.2"
+  }
+}
