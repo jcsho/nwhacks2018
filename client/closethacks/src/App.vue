@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <SideBar></SideBar>
+    <router-view class="main-section" />
   </div>
 </template>
 
 <script>
+import SideBar from '@/components/SideBar'
+
 export default {
   name: 'App',
   clothes: [],
@@ -25,7 +27,10 @@ export default {
       console.log(response);
 
     });
-  }
+  },
+  components: {
+    SideBar
+  },
 }
 </script>
 
@@ -36,6 +41,24 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+}
+
+.main-section {
+  display: flex;
+  width: 80vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 785px) {
+  #app {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .main-section {
+    width: 100vw;
+  }
 }
 </style>

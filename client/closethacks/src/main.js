@@ -7,6 +7,7 @@ import jQuery from 'jquery'
 global.jQuery = jQuery
 let Bootstrap = require('bootstrap')
 import 'bootstrap/dist/css/bootstrap.css'
+import SideBar from '@/components/SideBar'
 
 Vue.config.productionTip = false
 
