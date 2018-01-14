@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Resource from 'vue-resource'
 import HelloWorld from '@/components/HelloWorld'
 import Closet from '@/components/Closet'
 
-Vue.use(Router)
+Vue.use(Router);
+Vue.use(Resource);
 
 export default new Router({
   routes: [
