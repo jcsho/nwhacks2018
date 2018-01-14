@@ -21,7 +21,7 @@ module.exports = (context, callback) => {
     style: style
   };
 
-  let uri = process.env['INSERT_URI'];
+  let uri = process.env['MONGO_URI'];
 
   try {
     if (cache == null) {
