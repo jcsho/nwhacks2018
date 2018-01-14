@@ -1,0 +1,19 @@
+#headContainer {
+  height: 15vh;
+}
+
+#topCarousel {
+  height: 25vh;
+}
+
+#topCarousel img {
+  height: 100%;
+}
+
+#bottomCarousel {
+  height: 35vh;
+}
+
+#shoeCarousel {
+  height: 5vh;
+}
