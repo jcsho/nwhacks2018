@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    lalala
+    This is your closet...
   </div>
 </template>
 

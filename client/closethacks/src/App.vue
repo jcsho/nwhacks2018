@@ -33,6 +33,15 @@ export default {
 }
 
 @media screen and (max-width: 785px) {
+  #app {
+    flex-direction: column;
+  }
+
+  .main-section {
+  }
+}
+
+@media screen and (max-width: 785px) {
   .main-section {
     width: 100vw;
   }

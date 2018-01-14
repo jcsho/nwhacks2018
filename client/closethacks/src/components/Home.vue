@@ -28,7 +28,7 @@
           </label>
         </div>
       </div>
-      <div id="season-check" class="filter-list">
+      <div id="style-check" class="filter-list">
         <p class="check-title">Style</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="dressy">
@@ -168,6 +168,33 @@ img.bottom {
 img.shoe {
   height: 10vh;
   width: auto;
+}
+
+@media screen and (max-width: 785px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-sec {
+    margin-top: 50px;
+    width: 100vw;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .slider-sec {
+    width: 100vw;
+  }
+
+  #season-check {
+    margin-right: 50px;
+  }
+
+  .home .sliders {
+    width: 100%;
+  }
 }
 
 </style>
