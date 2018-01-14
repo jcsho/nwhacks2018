@@ -57,35 +57,35 @@
         <div class="sliders">
           <carousel class="tops" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
             <slide>
-              <img class="top" src="./../assets/logo.png" />
+              <img class="top" src="https://c1.staticflickr.com/1/571/21474845562_9d8e6b63cd_b.jpg" />
             </slide>
             <slide>
-              <img class="top" src="./../assets/logo.png" />
+              <img class="top" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg" />
             </slide>
             <slide>
-              <img class="top" src="./../assets/logo.png" />
+              <img class="top" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_Tshirt.jpg" />
             </slide>
           </carousel>
           <carousel class="bottoms" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
             <slide>
-              <img class="bottom" src="./../assets/logo.png" />
+              <img class="bottom" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Jeans_BW_2_%283213391837%29.jpg" />
             </slide>
             <slide>
-              <img class="bottom" src="./../assets/logo.png" />
+              <img class="bottom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Swiss_gray_denim_uniform_pants_%2815530260916%29.jpg/770px-Swiss_gray_denim_uniform_pants_%2815530260916%29.jpg" />
             </slide>
             <slide>
-              <img class="bottom" src="./../assets/logo.png" />
+              <img class="bottom" src="https://c1.staticflickr.com/6/5168/5350674888_ed65d77a54.jpg" />
             </slide>
           </carousel>
           <carousel class="shoes" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
             <slide>
-              <img class="shoe" src="./../assets/logo.png" />
+              <img class="shoe" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Mens%27_ballroom_shoes%2C_Eurodance_CZ.jpg" />
             </slide>
             <slide>
-              <img class="shoe" src="./../assets/logo.png" />
+              <img class="shoe" src="https://c1.staticflickr.com/6/5187/5612137877_488e4831b6_z.jpg" />
             </slide>
             <slide>
-              <img class="shoe" src="./../assets/logo.png" />
+              <img class="shoe" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Combat_boots_IMGP8975.jpg" />
             </slide>
           </carousel>
         </div>
@@ -149,9 +149,6 @@ p.check-title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.slider-sec .sliders {
 }
 
 .VueCarousel.tops {
