@@ -7,7 +7,25 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  clothes: [],
+  created: function () {
+
+    console.log('created ran');
+    this.$http.get('http://chantellechan1.stdlib.com/sort@dev/read/').then(response => {
+
+      //success callback
+      console.log(response);
+      this.clothes = response.body;
+      console.log(this.clothes);
+
+    }, response => {
+
+      //error callback
+      console.log(response);
+
+    });
+  }
 }
 </script>
 
