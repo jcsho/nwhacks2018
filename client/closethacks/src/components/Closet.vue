@@ -6,44 +6,21 @@
             <h1 class="heading">Closet</h1>
           </div>
 
-        <div class="filters">
-            <!-- TYPE -->
-            <div class="type row">
-                <h2 class="subheading">type</h2>
-                <button class="btn">top</button>
-                <button class="btn">bottom</button>
-                <button class="btn">shoes</button>
-            </div>
-
-            <!-- SEASON -->
-            <div class="season row">
-                <h2 class="subheading">season</h2>
-                <button class="btn">spring</button>
-                <button class="btn">summer</button>
-                <button class="btn">fall</button>
-                <button class="btn">winter</button>
-            </div>
-
-            <!-- STYLE -->
-            <div class="style row">
-                <h2 class="subheading">style</h2>
-                <button class="btn">dressy</button>
-                <button class="btn">casual</button>
-                <button class="btn">sport</button>
-            </div>
-        </div>
+        <closet-filter></closet-filter>
       </div>
 
       <!-- CATALOGUE -->
       <div class="catalogue col-md-8">
           <ul class="row">
-              <li 
-                v-for="clothe in clothes" 
-                :key="clothe.id"
-                class="col-md-4">
+              <li class="col-md-4">
                   <!-- <img :src="`../assets/`+{{clothe.name}}+`.png`" /> -->
-                  {{ clothe. name }}
+                <img src="../assets/pants_1.png" />
               </li>
+            <li class="col-md-4"><img src="../assets/shirt_2.png" /></li>
+            <li class="col-md-4"><img src="../assets/pants_2.png" /></li>
+            <li class="col-md-4"><img src="../assets/pants_3.png" /></li>
+            <li class="col-md-4"><img src="../assets/pants_4.png" /></li>
+            <li class="col-md-4"><img src="../assets/shoes_1.png" /></li>
           </ul>
       </div>
   </div>
@@ -52,6 +29,7 @@
 </template>
 
 <script>
+  import filter from "./Filter.vue"
 export default {
     name: 'closet',
     data() {
@@ -60,6 +38,9 @@ export default {
             loading: true
         }
     },
+  components: {
+    "ClosetFilter": filter
+  },
     created() {
         this.$http.get('http://chantellechan1.stdlib.com/sort@dev/read/').then(
             (res) => {
@@ -75,5 +56,17 @@ export default {
 </script>
 
 <style>
-
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+li {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+}
 </style>
