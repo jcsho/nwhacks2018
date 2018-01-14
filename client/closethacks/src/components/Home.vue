@@ -5,7 +5,7 @@
     <section class="main-sec">
       <section class="filter-sec">
       <div id="season-check" class="filter-list">
-        <p>Season</p>
+        <p class="check-title">Season</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="spring">
           <label class="form-check-label" for="spring">
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div id="season-check" class="filter-list">
-        <p>Style</p>
+        <p class="check-title">Style</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="dressy">
           <label class="form-check-label" for="dressy">
@@ -54,44 +54,40 @@
       </div>
       </section>
       <section class="slider-sec">
-        <div class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="item active">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="First slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Second slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Third slide">
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-inner">
-            <div class="item active">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="First slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Second slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Third slide">
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-inner">
-            <div class="item active">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="First slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Second slide">
-            </div>
-            <div class="item">
-              <img class="d-block w-100" src="./../assets/logo.png" alt="Third slide">
-            </div>
-          </div>
+        <div class="sliders">
+          <carousel class="tops" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
+            <slide>
+              <img class="top" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="top" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="top" src="./../assets/logo.png" />
+            </slide>
+          </carousel>
+          <carousel class="bottoms" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
+            <slide>
+              <img class="bottom" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="bottom" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="bottom" src="./../assets/logo.png" />
+            </slide>
+          </carousel>
+          <carousel class="shoes" :perPage="1" :navigationEnabled="true" :paginationEnabled="false">
+            <slide>
+              <img class="shoe" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="shoe" src="./../assets/logo.png" />
+            </slide>
+            <slide>
+              <img class="shoe" src="./../assets/logo.png" />
+            </slide>
+          </carousel>
         </div>
       </section>
     </section>
@@ -129,7 +125,7 @@ export default {
 }
 
 .filter-sec {
-  width: 40vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,12 +139,52 @@ export default {
   padding-bottom: 10vh;
 }
 
+p.check-title {
+  font-size: 30px;
+}
+
 .slider-sec {
-  width: 30vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.slider-sec .sliders {
+}
+
+.VueCarousel.tops {
+  height: 25vh;
+  width: 50%;
+  margin: auto;
+}
+
+img.top {
+  height: 25vh;
+  width: auto;
+}
+
+.VueCarousel.bottoms {
+  height: 30vh;
+  width: 50%;
+  margin: auto;
+}
+
+img.bottom {
+  height: 30vh;
+  width: auto;
+}
+
+.VueCarousel.shoes {
+  height: 10vh;
+  width: 50%;
+  margin: auto;
+}
+
+img.shoe {
+  height: 10vh;
+  width: auto;
 }
 
 </style>
