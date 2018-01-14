@@ -1,11 +1,12 @@
 {
   "name": "crud",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "justinhodev <justinhodev@gmail.com>",
   "main": "functions/__main__.js",
   "dependencies": {
     "ejs": "^2.5.7",
+    "lib": "^3.0.1",
     "mime": "^1.5.0",
     "mongodb": "^2.2.33"
   },

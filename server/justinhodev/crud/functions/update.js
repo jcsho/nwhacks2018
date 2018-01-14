@@ -9,7 +9,8 @@ let cache = null;
 * @returns {any}
 */
 module.exports = (ids, completed, context, callback) => {
-  let uri = process.env['MONGO_URI'];
+  // let uri = process.env['MONGO_URI'];
+  let uri = 'mongodb://nwhacks:wardrobe@ds255787.mlab.com:55787/clothes';
   ids = ids.map(id => new mongodb.ObjectID(id));
 
   try {
@@ -33,7 +34,7 @@ module.exports = (ids, completed, context, callback) => {
 
 const updateClothes = (db, ids, name, type, season, style, callback) => {
   db
-    .collection('clothes')
+    .collection('clothing')
     .updateMany(
       { _id: { $in: ids } },
       { $set: 

@@ -7,7 +7,8 @@ let cache = null;
 * @returns {array}
 */
 module.exports = (context, callback) => {
-  let uri = process.env['MONGO_URI'];
+  // let uri = process.env['MONGO_URI'];
+  let uri = 'mongodb://nwhacks:wardrobe@ds255787.mlab.com:55787/clothes';
 
   try {
     if (cache === null) {
@@ -29,7 +30,7 @@ module.exports = (context, callback) => {
 };
 
 const readClothes = (db, callback) => {
-  let cursor = db.collection('clothes').find();
+  let cursor = db.collection('clothing').find();
   let clothes = [];
   cursor.each((error, item) => {
     if (error) {

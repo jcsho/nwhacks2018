@@ -8,7 +8,8 @@ let cache = null;
 * @returns {any}
 */
 module.exports = (ids, context, callback) => {
-  let uri = process.env['MONGO_URI'];
+  // let uri = process.env['MONGO_URI'];
+  let uri = 'mongodb://nwhacks:wardrobe@ds255787.mlab.com:55787/clothes';
   ids = ids.map(id => new mongodb.ObjectID(id));
 
   try {
@@ -31,7 +32,7 @@ module.exports = (ids, context, callback) => {
 };
 
 const destroyClothes = (db, ids, callback) => {
-  db.collection('clothes').deleteMany({ _id: { $in: ids } }, (error, results) => {
+  db.collection('clothing').deleteMany({ _id: { $in: ids } }, (error, results) => {
     if (error) {
       console.log(error);
       return callback(error);
