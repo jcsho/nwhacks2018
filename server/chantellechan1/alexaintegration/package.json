@@ -1,0 +1,24 @@
+{
+  "name": "alexaintegration",
+  "version": "0.0.0",
+  "description": "",
+  "author": "chantellechan1 <chantellechan1@gmail.com>",
+  "main": "functions/__main__.js",
+  "dependencies": {
+    "lib": "^3.0.1",
+    "mongodb": "^2.2.33",
+    "request": "^2.83.0"
+  },
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "chantellechan1/alexaintegration",
+    "timeout": 10000,
+    "publish": true,
+    "personalize": {
+      "keys": [],
+      "user": []
+    },
+    "source": "alexa"
+  }
+}
